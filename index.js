@@ -8,13 +8,37 @@ const { SoftwareEngineer } = require("./classes/SoftwareEngineer");
 //
 // Employees
 //
-const preston = new Employees("Preston", "Engineer", 100000);
-console.log(preston.getSalary()); // 100000
-preston.setSalary(105000);
-console.log(preston.getSalary()); // 105000
-console.log(preston.getStatus()); // true;
-preston.setStatus("fire");
-console.log(preston.getStatus()); // false;
+// const preston = new Employees("Preston", "Engineer", 100000);
+// console.log(preston.getSalary()); // 100000
+// preston.setSalary(105000);
+// console.log(preston.getSalary()); // 105000
+// console.log(preston.getStatus()); // true;
+// preston.setStatus("fire");
+// console.log(preston.getStatus()); // false;
+
+//
+// Manager
+//
+
+// const jenna = new Manager(
+//   "Jenna",
+//   "Head of Engineers",
+//   120000,
+//   "Software Engineering",
+//   10
+// );
+// console.log(jenna.getEmployeesManaged()); // []
+// const preston = new Employees("Preston", "Engineer", 100000);
+// jenna.setEmployeesManaged(preston);
+// console.log(jenna.getEmployeesManaged()); // [ Employee ]
+
+//
+// SalesPerson
+//
+
+//
+// SoftwareEngineer
+//
 
 module.exports = {
   Employees,
