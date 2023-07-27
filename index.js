@@ -36,19 +36,29 @@ const { SoftwareEngineer } = require("./classes/SoftwareEngineer");
 // SalesPerson
 //
 
+const malik = new SalesPerson("Malik", "Enterprise Sale Associate", 90000, [
+  "Vine",
+  "MySpace",
+  "Shutterfly",
+]);
+console.log(malik.getSalesNumber()); // 0
+malik.makeSale(10500);
+malik.makeSale(20000);
+console.log(malik.getSalesNumber()); // 30500
+
 //
 // SoftwareEngineer
 //
 
-const programmer = new SoftwareEngineer(
-  "Becca",
-  "Senior Software Engineer",
-  100000,
-  ["JavaScript", "Java", "Python"]
-);
-console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python"]
-programmer.setProgrammingLanguage("C#");
-console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python", "C#"]
+// const programmer = new SoftwareEngineer(
+//   "Becca",
+//   "Senior Software Engineer",
+//   100000,
+//   ["JavaScript", "Java", "Python"]
+// );
+// console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python"]
+// programmer.setProgrammingLanguage("C#");
+// console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python", "C#"]
 
 module.exports = {
   Employees,
